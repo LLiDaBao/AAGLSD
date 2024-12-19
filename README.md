@@ -1,0 +1,2 @@
+# AAGLSD
+Aligned-Anchor_Groups_Guided_Line_Segment_Detector
