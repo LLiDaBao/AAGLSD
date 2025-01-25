@@ -1,5 +1,5 @@
 # AAGLSD
-Aligned-Anchor Groups Guided Line Segment Detector 
+The C++ implementation of paper "ALIGNED-ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR". 
 
 Followings are brief description of each folder:
 - src: the implementation of AAGLSD.
