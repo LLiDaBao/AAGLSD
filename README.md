@@ -17,16 +17,16 @@ Followings are brief description of each folder:
 The F-Score for different line segment detectors evaluated on the [YorkUrbanDB](https://www.elderlab.yorku.ca/resources/york-urban-line-segment-database-information/), and the YorkUrban-LineSegment from [Linelet](https://github.com/NamgyuCho/Linelet-code-and-YorkUrban-LineSegment-DB).
 ### 📗YorkUrbanDB
 <div align="center">
-    <img src="./imgs/AP-yorkurban.png" width="33%" alt="AP YUD"/>
-    <img src="./imgs/AR-yorkurban.png" width="33%" alt="AR YUD"/>
-    <img src="./imgs/Fsc-yorkurban.png" width="33%" alt="F-Score YUD"/>
+    <img src="./imgs/AP-yorkurban.png" width="30%" alt="AP YUD"/>
+    <img src="./imgs/AR-yorkurban.png" width="30%" alt="AR YUD"/>
+    <img src="./imgs/Fsc-yorkurban.png" width="30%" alt="F-Score YUD"/>
 </div>
 
 ### 📗YorkUrban-LineSegment
 <div align="center">
-    <img src="./imgs/AP-yorkurban.png" width="33%" alt="AP YULD"/>
-    <img src="./imgs/AR-yorkurban.png" width="33%" alt="AR YULD"/>
-    <img src="./imgs/Fsc-yorkurban.png" width="33%" alt="F-Score YULD"/>
+    <img src="./imgs/AP-yorkurban.png" width="30%" alt="AP YULD"/>
+    <img src="./imgs/AR-yorkurban.png" width="30%" alt="AR YULD"/>
+    <img src="./imgs/Fsc-yorkurban.png" width="30%" alt="F-Score YULD"/>
 </div>
 
 ## ⏰ Visulization
