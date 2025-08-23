@@ -1,16 +1,31 @@
 # 😎ALIGNED ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR
 ## 😊Introduction
-The C++ implementation of paper *"ALIGNED ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR"*. 
+The C++ implementation of paper **"ALIGNED ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR"**. 
 
 Followings are brief description of each folder:
-- src: The C++ implementation of AAGLSD.
-- evaluation: Code for evaluation.
+```
+AAGLSD/
+├── evaluation:   Code for evaluation. 
+├── imgs:         Images for readme.
+├── pred_results: Results from different line segment detectors. 
+├── src/
+│    ├── src_cpp:  C++ implementation of AAGLSD.
+│    └── src_py:   Python implementation of AAGLSD.
+└── README.md
+```
+p.s.
+- evaluation: Only `repeatbility` evaluation is available. For the other metrics we adopted, the code is from [AG3Line](https://github.com/weidong-whu/AG3line) now. The python code would be assembled soon.
 - pred_results: Detected line segments from different line segment detectors. Each row a `.txt` file is a line segment represented as endpoint-endpoint`[x0, y0, x1, y1]`, which means endpoint-endpoint. The suffix represents the type of LSD (e.g. `*aag.txt`).
 
 ## 🚀 TODO
-- [x] Release C++ source code of our AAGLSD.
-- [x] Add `repeatability` evaluation code.
-- [ ] Optimize code and release python version...
+- [x] Date: 2025.06.30.
+  - Release C++ source code of our AAGLSD.
+  - Release `repeatability` evaluation code.
+
+- [x] Date: 2025.8.23.
+  - 🥰Our paper is accepted by **PRCV2025** (The 8th Chinese Conference on Pattern Recognition and Computer Vision).
+- [ ] Release python code for AAGLSD and metrics evaluation (AP,AR,IoU,F-Score).
+
 
 
 ## 📖 Evaluation Results on the YorkUrbanDB
