@@ -1,6 +1,6 @@
 # 😎ALIGNED ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR
 ## 😊Introduction
-The C++ implementation of paper **"ALIGNED ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR"**. 
+The implementation of paper **"ALIGNED ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR"**. 
 
 Followings are brief description of each folder:
 ```
