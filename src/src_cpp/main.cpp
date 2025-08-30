@@ -17,7 +17,7 @@ int main(void)
 #ifdef YORK_URBAN_EVALUATE
 	std::vector<std::string> filenames;
 	// your path that saved images,
-	// e.g. listDirRecursively(filenames, "F:/projects-learning/datasets/YorkUrbanDB", ".jpg");
+	// e.g. listDirRecursively(filenames, "../datasets/YorkUrbanDB", ".jpg");
 
 	listDirRecursively(filenames, "your image path", "suffix");
 
@@ -30,7 +30,7 @@ int main(void)
 		
 		LineSegList gt;
 		// your folder where saves the labels,
-		// e.g. extractYUK("F:/projects-learning/line-segment-detect/data/yuk-linelet-labels/" + labelname + ".txt", gt);
+		// e.g. extractYUK("../data/yuk-linelet-labels/" + labelname + ".txt", gt);
 		extractYUK("your label path" + labelname + ".txt", gt);
 
 		std::cout << "\r" << imgPath;
@@ -84,8 +84,8 @@ int main(void)
 
 	std::vector<std::string> imgNames;
 
-	std::string HPATCHES_DIR = "F:/projects-learning/datasets/hpatches-sequences-release/";
-	std::string imgList = "F:/projects-learning/line-segment-detect/Aligned-Group-Edge-Drawing/evaluation/repeatability-evalutaion/image-names.txt";
+	std::string HPATCHES_DIR = "your hpatches path";
+	std::string imgList = "your image list path saving all image names, e.g. 'data/hpatches/list.txt'";
 
 	readFileNames(imgList, imgNames);
 
@@ -130,7 +130,7 @@ int main(void)
 		//drawLineSegments(res, candidateSegments, false, cv::Vec3b(0, 0, 255));
 		drawLineSegments(canvas, lineSegments, true, cv::Vec3b(0, 0, 255));
 
-		std::string dstDir = "F:/projects-learning/line-segment-detect/data/hpatches/my";
+		std::string dstDir = "your output path";
 		int ind = imgNames[i].find_last_of('/');
 		dstDir = dstDir + "/" + imgNames[i].substr(0, ind);
 		std::string imgname = imgNames[i].substr(ind + 1);

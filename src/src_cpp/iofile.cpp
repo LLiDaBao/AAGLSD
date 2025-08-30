@@ -8,10 +8,8 @@ void listDirRecursively(
 )
 {
 	try {
-		// 检查路径是否存在
 		if (fs::exists(dir) && fs::is_directory(dir))
 		{
-			// 遍历目录
 			for (const auto& entry : fs::recursive_directory_iterator(dir))
 			{
 				if (fs::is_regular_file(entry.status()))
@@ -46,10 +44,8 @@ void listDir(
 )
 {
 	try {
-		// 检查路径是否存在
 		if (fs::exists(dir) && fs::is_directory(dir))
 		{
-			// 遍历目录
 			for (const auto& entry : fs::directory_iterator(dir))
 			{
 				if (fs::is_regular_file(entry.status()))
