@@ -20,16 +20,16 @@ p.s.
 ## ⚙️ USAGE
 
 ### AAG Module
-We provide python API to simply extract extract `alinged anchor groups(AAGs)` from input image in `src/src_py/lsd` module, see `example.ipynb`.
+We provide python API to simply extract `alinged anchor groups(AAGs)` from input image in `src/src_py/lsd` module, see `example.ipynb`.
 ```
-gray = cv2.imread("imgs/example_1.png", cv2.IMREAD_GRAYSCALE)
-grad_info = GradientInfo().from_image(gray, KernelType.MASK2x2)
+gray = cv2.imread("src/src_py/imgs/example_1.png", cv2.IMREAD_GRAYSCALE)
 if gray is None:
     raise FileNotFoundError
 
+grad_info = GradientInfo().from_image(gray, KernelType.MASK2x2)
 detector = HierachicalAnchorDetector(grad_info)
-detector.detect(1024, 512)
-detector.vis_anchors(gray)
+detector.detect(bins=1024, mag_range=512)
+canvas = detector.vis_anchors(gray)
 ```
 Access `AAGs` through `detector.aligned_anchors`, it is a list of triplets of `Pixel`, like
 ```
