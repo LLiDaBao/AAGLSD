@@ -19,14 +19,40 @@ p.s.
 
 ## ⚙️ USAGE
 
-### Visual Studio
+### AAG Module
+We provide python API to simply extract extract `alinged anchor groups(AAGs)` from input image in `src/src_py/lsd` module, see `example.ipynb`.
+```
+gray = cv2.imread("imgs/example_1.png", cv2.IMREAD_GRAYSCALE)
+grad_info = GradientInfo().from_image(gray, KernelType.MASK2x2)
+if gray is None:
+    raise FileNotFoundError
+
+detector = HierachicalAnchorDetector(grad_info)
+detector.detect(1024, 512)
+detector.vis_anchors(gray)
+```
+Access `AAGs` through `detector.aligned_anchors`, it is a list of triplets of `Pixel`, like
+```
+[
+ (Pixel(x=188.0, y=400.0, val=212.0),
+  Pixel(x=188.0, y=401.0, val=220.0),
+  Pixel(x=189.0, y=402.0, val=202.0)),
+ 
+ (Pixel(x=112.0, y=440.0, val=216.0),
+  Pixel(x=113.0, y=439.0, val=218.0),
+  Pixel(x=114.0, y=438.0, val=214.0)),
+  ...]
+```
+___
+### Run Full Pipeline
+#### Visual Studio
 1. Download [OpenCV](https://opencv.org/releases/page/1/) on windows.
 2. Include all `.cpp` and `.hpp` files in `src_cpp` into your project.
 3. Add the `.dll` and `.lib` files of `OpenCV` to your enviroment path.
 4. Set your C++ Compiler to C++14 or higher.
 ___
-### CMake
-1. Prerequisites
+#### CMake
+1. Requirements
    - **CMake ≥ 3.10**
    - **OpenCV ≥ 4.0.1** (Make sure `OpenCV_DIR` points to `<opencv-root>/lib/cmake/opencv4` if not in default search paths)
    - **C++14 (or higher) compliant compiler**
