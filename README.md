@@ -98,6 +98,7 @@ ___
 
 - [x] Date: 2025.8.23.
   - 🥰Our paper is accepted by **PRCV2025** (The 8th Chinese Conference on Pattern Recognition and Computer Vision).
+  - Paper is available at [arxiv](https://arxiv.org/abs/2509.00786).
 - [ ] Release python code for AAGLSD and metrics evaluation (AP,AR,IoU,F-Score).
 
 
