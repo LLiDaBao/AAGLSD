@@ -1,6 +1,6 @@
 # 😎ALIGNED ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR
 ## 😊Introduction
-The implementation of paper **"ALIGNED ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR"**. 
+The implementation of paper [ALIGNED ANCHOR GROUPS GUIDED LINE SEGMENT DETECTOR](https://arxiv.org/abs/2509.00786). 
 
 Followings are brief description of each folder:
 ```
